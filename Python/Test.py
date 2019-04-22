@@ -3,15 +3,19 @@
 
 import json
 import tkinter
+import tkinter.messagebox
+import tkinter.colorchooser
+import Tkinter.TkTestClass
 
-print("你好 python!")
 
-jsonData = '{"a":1,"b":2,"c":3,"d":4,"e":5}'
+def helloCallBack():
+    print("你好 python!")
+    jsonData = '{"a":1,"b":2,"c":3,"d":4,"e":5}'
+    text = json.loads(jsonData)
+    print(text)
 
-text = json.loads(jsonData)
-print(text)
 
-top = tkinter.Tk()
+if __name__ == "__main__":
+    tkDlg = Tkinter.TkTestClass.TktestClass()
+    tkDlg.Show()
 
-# 进入消息循环
-top.mainloop()
