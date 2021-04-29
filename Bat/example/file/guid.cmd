@@ -12,5 +12,4 @@ set "guid=!guid!!n!")
 set "guid=%guid:~,8%-%guid:~8,4%-%guid:~12,4%-%guid:~16,4%-%guid:~-12%"
 
 echo %guid%
-
-pause
+endlocal
