@@ -58,4 +58,4 @@ class Ui_MainDialog(object):
         self.pushButton_stop.setText(_translate("MainDialog", "End thread"))
         self.pushButton_popup.setText(_translate("MainDialog", "Popup Sys"))
         self.pushButton_custom.setText(_translate("MainDialog", "Popup custom"))
-from . import resource_rc
+from UI import resource_rc
