@@ -65,57 +65,45 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_start">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
      <x>260</x>
      <y>40</y>
-     <width>75</width>
-     <height>23</height>
+     <width>107</width>
+     <height>135</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Start thread</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_stop">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>100</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>End thread</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_popup">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>150</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Popup Sys</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_custom">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>200</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Popup custom</string>
-   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_start">
+      <property name="text">
+       <string>Start thread</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_stop">
+      <property name="text">
+       <string>End thread</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_popup">
+      <property name="text">
+       <string>Popup Sys</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_custom">
+      <property name="text">
+       <string>Popup custom</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources>
