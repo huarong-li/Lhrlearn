@@ -74,9 +74,40 @@ def string_test():
     )
     print(s)
 
+def map_test():
+    items = [1, 2, 3, 4, 5]
+    squared = list(map(lambda x: x**2, items))
+    print(squared)
+
+    def multiply(x):
+        return (x*x)
+    def add(x):
+        return (x+x)
+
+    funcs = [multiply, add]
+    for i in range(5):
+        value = map(lambda x: x(i), funcs)
+        print(list(value))
+    # 译者注：上面print时，加了list转换，是为了python2/3的兼容性
+    #        在python2中map直接返回列表，但在python3中返回迭代器
+    #        因此为了兼容python3, 需要list转换一下
+
+    # filter使用
+    number_list = range(-5, 5)
+    less_than_zero = filter(lambda x: x < 0, number_list)
+    print(list(less_than_zero)) 
+
+    # reduce使用
+    product = reduce( (lambda x, y: x * y), [1, 2, 3, 4] )
+    print(product)
 
 if __name__ == "__main__":
     #fun_test()
 
     string_test()
 
+    map_test()
+
+    # 三元运算符
+    is_fat = True
+    print("fat" if is_fat else "not fat")
