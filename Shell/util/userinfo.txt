@@ -1,0 +1,11 @@
+
+
+len  =    34
+
+username=LHR
+
+fsync = off
+
+test.log_path = "/tmp/test.log"
+
+mac.connections = 100
