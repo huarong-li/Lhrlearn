@@ -85,8 +85,6 @@ if __name__ == "__main__":
     buildFunTest()
 
     tkDlg = Tkinter.TkTestClass.TktestClass()
-
     
-    
-    #tkDlg.Show()
+    tkDlg.Show()
 
