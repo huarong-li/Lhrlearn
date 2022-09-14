@@ -8,7 +8,7 @@
 
 #include <iostream>
 
-void ${ my_print }() {
+void ${my_print}() {
 	std::cout << "print something" << std::endl;
 }
 
